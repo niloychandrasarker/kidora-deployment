@@ -13,6 +13,7 @@ docker rm kidora-backend || true
 echo "👉 Building backend image..."
 docker build -t kidora-backend .
 
+cd /app/kidora/kidora-deployment
 echo "👉 Running backend container..."
 docker run -d \
   --name kidora-backend \
