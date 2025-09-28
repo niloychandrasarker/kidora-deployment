@@ -15,7 +15,11 @@ docker rm -f kidora-frontend || true
 docker build -t kidora-frontend .
 
 # Run new container
-docker run -d -p 8080:80 --network kidora-deployment_kidora-network --name kidora-frontend kidora-frontend
+docker run -d \
+    --network kidora-deployment_kidora-network \
+    --name kidora-frontend \
+    -p 8080:80 \
+    kidora-frontend
 
 # Follow logs
 docker logs -f kidora-frontend
