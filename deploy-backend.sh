@@ -4,7 +4,7 @@ set -e
 echo "👉 Pulling latest code..."
 git pull
 
-cd /app/kidora/Kidora-backend
+cd /app/kidora/kidora-backend
 
 echo "👉 Stopping old container..."
 docker stop kidora-backend || true
