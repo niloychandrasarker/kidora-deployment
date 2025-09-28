@@ -9,7 +9,7 @@ docker rm kidora-backend || true
 echo "👉 Running backend container..."
 docker run -d \
   --name kidora-backend \
-  --network kidora-network \
+  --network kidora-deployment_kidora-network \
   --env-file .env-backend \
   -p 8081:8080 \
   kidora-backend
