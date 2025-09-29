@@ -20,6 +20,7 @@ docker run -d \
   --network kidora-deployment_kidora-network \
   --env-file .env-backend \
   -p 8081:8080 \
+  -v /app/kidora/storage:/app/uploads \
   kidora-backend
 
 echo "✅ Backend deployed on port: 8081"
