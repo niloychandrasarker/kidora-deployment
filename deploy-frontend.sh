@@ -18,7 +18,7 @@ docker build -t kidora-frontend .
 docker run -d \
     --network kidora-deployment_kidora-network \
     --name kidora-frontend \
-    -p 8080:80 \
+    -p 80:80 \
     kidora-frontend
 
 # Follow logs
